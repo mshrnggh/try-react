@@ -1,13 +1,14 @@
 import styles_Main from "../styles/Main.module.css";
-import MyApp from  "../styles/globals.css";
-import "../styles/globals.css";
+//import "../styles/globals.css";//_app.jsにてMyApp設定済み
 import { Vercel_links } from "../components/Vercel_links";
 import { Vercel_footer } from "../components/Vercel_footer";
 import { Headline } from "../components/Headline";
+import { Header } from "../components/Header";
 
 export default function About() {
   return (
     <main className={styles_Main.main}>
+      <Header/>
       <Headline 
         page="about" 
         num = {111} 
