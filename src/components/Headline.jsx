@@ -3,16 +3,25 @@ import styles from "../styles/page.module.css";
 import React from "react";
 
 export function Headline(props) {
-  console.log('Props: ', props.title);
+  console.log('Page: ', props.page);
+  console.log('Num: ', props.num);
+  console.log('Array: ', props.arry);
+  console.log('Object: ', props.obj);
+  console.log('Boolean: ', props.boolean);
+  console.log('CompDOM: ', props.compDOM);
+  // console.log('onClick: ', props.onClick);
+  console.log('Children: ', props.children);
   return (
     <div> 
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/{props.page}.js</code>
+          Get started by editing 
+          {props.children}      
         </p>
+        {/* <button onClick={props.onClick}>BUTTON</button> */}
       </div>
         <h1 className={styles.title}>{props.page} page</h1>
+        
         <div className={styles.center}>
           <Image
             className={styles.logo}
