@@ -1,26 +1,13 @@
-import styles from "../styles/page.module.css";
-import React, { useEffect } from 'react';
+import styles_Main from "../styles/Main.module.css";
+import MyApp from  "../styles/globals.css";
 import "../styles/globals.css";
 import { Vercel_links } from "../components/Vercel_links";
 import { Vercel_footer } from "../components/Vercel_footer";
 import { Headline } from "../components/Headline";
 
 export default function About() {
-   useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'hidden') {
-        // ページがバックグラウンドに移動したときの処理
-      }
-    };
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-    // コンポーネントのアンマウント時にイベントリスナーを削除
-    return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-  }, []);
-
   return (
-    <main className={styles.main}>
+    <main className={styles_Main.main}>
       <Headline 
         page="about" 
         num = {111} 
@@ -30,7 +17,7 @@ export default function About() {
         // compDOM = {<></></>} 
         // onClick={()=>alert("Button clicked!!")}
       >
-        <code className={styles.code}> src/app/about.js</code>
+        <code className={styles_Main.code}> src/app/about.js</code>
       </Headline>
       <Vercel_links/>   
       <p style = {{marginTop: '2rem'}}></p>

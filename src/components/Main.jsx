@@ -1,4 +1,4 @@
-import styles from "../styles/page.module.css";
+import styles from "../styles/Main.module.css";
 import { Vercel_links } from "../components/Vercel_links";
 import { Vercel_footer } from "../components/Vercel_footer";
 import { Headline } from "../components/Headline";

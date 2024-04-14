@@ -1,4 +1,4 @@
-import styles from '../styles/page.module.css';
+import styles from '../styles/Vercel_link.module.css';
 
 export function Vercel_links() {
   return (  

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../styles/page.module.css';
+import styles_footer from '../styles/Vercel_footer.module.css';
 
 export function Vercel_footer() {
   return (  
@@ -13,7 +13,7 @@ export function Vercel_footer() {
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
-              className={styles.vercelLogo}
+              className={styles_footer.vercelLogo}
               width={100}
               height={24}
               priority
