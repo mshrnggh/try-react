@@ -1,57 +1,40 @@
 import styles from '../styles/Vercel_link.module.css';
 
+const ITEMS = [
+  {
+    href: 'https://nextjs.org/docs',
+    title: 'Documentaion →',
+    description: 'Find in-depth information about Next.js features and API.',
+  },
+  {
+    href: 'https://nextjs.org/learn',
+    title: 'Learn \u2192',
+    description: 'Learn about Next.js in an interactive course with quizzes!',
+  },
+  {
+    href: 'https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app',
+    title: 'Examples →',
+    description: 'Discover and deploy boilerplate example Next.js projects.',
+  },
+  {
+    href: 'https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app',
+    title: 'Deploy →',
+    description: 'Instantly deploy your Next.js site to a public URL with Vercel.',
+  },
+];
+
 export function Vercel_links() {
   return (  
     <div className={styles.grid}> 
-       <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
+      { ITEMS.map((item) => {
+        return (
+        <a key={item.title} href={item.href} className={styles.card}
+          target="_blank" rel="noopener noreferrer"
+        > <h3>{item.title}</h3> <p>{item.description}</p>
         </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
- 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a> 
-
-         <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-      </div>
-    );
+        );
+      })}
+    </div>
+  );    
 }
+    
