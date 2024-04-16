@@ -1,9 +1,9 @@
-import styles from '../styles/Vercel_link.module.css';
+import styles from 'src/components/Vercel_links/Vercel_links.module.css';
 
 const ITEMS = [
   {
     href: 'https://nextjs.org/docs',
-    title: 'Documentaion →',
+    title: 'Documentaion \u2194',
     description: 'Find in-depth information about Next.js features and API.',
   },
   {

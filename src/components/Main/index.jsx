@@ -1,7 +1,7 @@
-import styles from "../styles/Main.module.css";
-import { Vercel_links } from "../components/Vercel_links";
-import { Vercel_footer } from "../components/Vercel_footer";
-import { Headline } from "../components/Headline";
+import styles from "src/components/Main/Main.module.css";
+import { Vercel_links } from "src/components/Vercel_links";
+import { Vercel_footer } from "src/components/Vercel_footer";
+import { Headline } from "src/components/Headline";
 
 export function Main(props) {
      return (

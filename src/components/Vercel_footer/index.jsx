@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles_footer from '../styles/Vercel_footer.module.css';
+import styles_footer from 'src/components/Vercel_footer/Vercel_footer.module.css';
 
 export function Vercel_footer() {
   return (  

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Headline.module.css";
+import styles from "src/components/Headline/Headline.module.css";
 import React from "react";
 
 export function Headline(props) {
