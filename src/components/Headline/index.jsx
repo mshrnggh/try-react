@@ -9,7 +9,7 @@ export function Headline(props) {
   console.log('Object: ', props.obj);
   console.log('Boolean: ', props.boolean);
   console.log('CompDOM: ', props.compDOM);
-  // console.log('onClick: ', props.onClick);
+  console.log('onClick: ', props.onClick);
   console.log('Children: ', props.children);
   return (
     <div> 
@@ -18,6 +18,7 @@ export function Headline(props) {
           Get started by editing 
           {props.children}      
         </p>
+        <img src="http://localhost:3000/next.svg" style={{height: '3vh', width: 'auto'}} />
         {/* <button onClick={props.onClick}>BUTTON</button> */}
       </div>
         <h1 className={styles.title}>{props.page} page</h1>

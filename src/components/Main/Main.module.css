@@ -12,6 +12,19 @@
   font-family: var(--font-mono);
 }
 
+.animatedText {
+  color: #00FFFF;
+  background-color: #160af7;
+  text-shadow: 3px 3px 3px #000000; /* 3D風の影 */
+  animation: float 2s ease-in-out infinite; /* 2秒後に浮かび上がるアニメーション */
+}
+
+@keyframes float {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-10px);}
+  100% {transform: translateY(0px);}
+}
+
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
     filter: invert(1);
