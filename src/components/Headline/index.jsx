@@ -15,10 +15,8 @@ export function Headline(props) {
     <div> 
       <div className={styles.description}>
         <p>
-          Get started by editing 
-          {props.children}      
+          Get started by editing {props.children}      
         </p>
-        <img src="http://localhost:3000/next.svg" style={{height: '3vh', width: 'auto'}} />
         {/* <button onClick={props.onClick}>BUTTON</button> */}
       </div>
         <h1 className={styles.title}>{props.page} page</h1>
@@ -28,8 +26,8 @@ export function Headline(props) {
             className={styles.logo}
             src="/next.svg"
             alt="Next.js Logo"
-            width={180}
-            height={37}
+            width={300}
+            height={100}
             priority
           />
         </div>
