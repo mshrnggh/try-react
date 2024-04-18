@@ -19,6 +19,20 @@
   animation: float 2s ease-in-out infinite; /* 2秒後に浮かび上がるアニメーション */
 }
 
+.buttonStyle {
+  background-color: #160af7;
+  color: #00FFFF;
+  border: 0.1rem solid #00FFFF;
+  padding: 0.25rem 0.25rem;
+  margin: left 2rem;
+  margin:right 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: var(--font-mono);
+  transition: background-color 0.3s;
+}
+
 @keyframes float {
   0% {transform: translateY(0px);}
   50% {transform: translateY(-10px);}
