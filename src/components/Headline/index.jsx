@@ -3,14 +3,6 @@ import styles from "src/components/Headline/Headline.module.css";
 import React from "react";
 
 export function Headline(props) {
-  console.log('Page: ', props.page);
-  console.log('Num: ', props.num);
-  console.log('Array: ', props.arry);
-  console.log('Object: ', props.obj);
-  console.log('Boolean: ', props.boolean);
-  console.log('CompDOM: ', props.compDOM);
-  console.log('onClick: ', props.onClick);
-  console.log('Children: ', props.children);
   return (
     <div> 
       <div className={styles.description}>

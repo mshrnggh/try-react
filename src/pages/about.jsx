@@ -1,37 +1,27 @@
 import styles_Main from "src/components/Main/Main.module.css";
-//import "../styles/globals.css";//_app.jsにてMyApp設定済み
 import { Vercel_links } from "src/components/Vercel_links";
 import { Vercel_footer } from "src/components/Vercel_footer";
 import { Headline } from "src/components/Headline";
-import React, { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-// let count;
 export default function About() {
-  const [count, setCount] = useState(1); 
   const increment = (e) => { 
     setCount(count => count + 1);
   };  
+  const [count, setCount] = useState(1); 
  
   useEffect(() => {
-    console.log('useEffect mounted.');
+    console.log('count:', count);
     document.body.style.backgroundColor = 'lightblue';
     return () => {
       console.log('useEffect unmounted.');
       document.body.style.backgroundColor = '';
     };
-  },[]);
+  },[count]);
 
   return (
     <main className={styles_Main.main}>
-            <Headline 
-        page="about" 
-        num = {111} 
-        arry={[1,2,3]}
-        obj ={{name: 'John', age: 25}}
-        boolean
-        // compDOM = {<></></>} 
-        // onClick={()=>alert("Button clicked!!")}
-      >
+      <Headline page="about">
         <code className={styles_Main.code}> src/app/about.js</code>
       </Headline>
       <h2>Count: {count}</h2>
