@@ -93,6 +93,11 @@
   text-transform: capitalize;
 }
 
+.inputStyle {
+  position: relative;
+  z-index: 1;
+}
+
 .logo {
   height:1rem;
   position: relative;
