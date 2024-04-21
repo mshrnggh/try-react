@@ -1,7 +1,5 @@
 import styles_Main from "src/components/Main/Main.module.css";
-import { Vercel_links } from "src/components/Vercel_links";
-import { Vercel_footer } from "src/components/Vercel_footer";
-import { Headline } from "src/components/Headline";
+import { Main } from "src/components/Main";
 import { useChangeBgcolor } from "src/components/ChangeBgcolor";
 
 export default function About({addlist, displayList}) {
@@ -27,13 +25,7 @@ export default function About({addlist, displayList}) {
       <button className={styles_Main.animatedText} onClick={handleDisplay}>
         {isShow ? "Click for hide" : "Click for display"}
       </button>
-      <Headline page="about">
-        <code className={styles_Main.code}> src/app/about.js</code>
-      </Headline>
-     
-      <Vercel_links/>    
-      <p style = {{marginTop: '2rem'}}></p>
-      <Vercel_footer/>
+      <Main page="index"/>
     </main>
   );
 }
