@@ -1,9 +1,6 @@
 import styles from 'src/components/Vercel_links/Vercel_links.module.css';
 
 export function Vercel_links({items, handleBgColor, bgColor, reduceItems, addItems}) {
-  console.log('items:', items);
-  console.log('bgColor:', bgColor);
-  console.log('handleBgColor:', handleBgColor);
   return (  
     <div className={styles.grid} style={{ backgroundColor: bgColor }}>  
       <button onClick={handleBgColor}>Change background color</button>

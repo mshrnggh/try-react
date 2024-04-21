@@ -3,11 +3,11 @@ import styles from "src/components/Headline/Headline.module.css";
 import React, { useState, useCallback } from "react";
 
 export function Headline(props) {
-
+  console.log('Headline props:', props);
   return (
     <div className={styles.container}>
       <div className={styles.description}>
-        <p>Get started by editing {props.children}</p>
+        <p>Get started by the below Lists of {props.items.length}</p>
         <h1 className={styles.title}>{props.page} page</h1>
       </div>
       <div className={styles.center}>

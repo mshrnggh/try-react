@@ -28,13 +28,13 @@ const ITEMS = [
 ];
 
 export function Main(props) {
-  console.log('props:', props);
+  console.log('Main props:', props);
     useEffect(() => {
       document.body.style.backgroundColor = 'lightgreen ';
       return () => { document.body.style.backgroundColor = '';}
     }, []);
 
-    const [bgColor, setBgColor] = useState('white');
+    const [bgColor, setBgColor] = useState('lightblue');
     const handleBgColor = () => {
       setBgColor(bgColor === 'lightblue' ? 'gold' : 'lightblue');
     };
@@ -53,7 +53,7 @@ export function Main(props) {
 
      return (
        <main className={styles.main}>
-          <Headline page={props.page}>
+          <Headline page={props.page} items={items}>
             <code className={styles.code}> src/app/{props.page}.js</code>
           </Headline>
           <Vercel_links items={items} bgColor={bgColor} addItems={addItems}
