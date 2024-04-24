@@ -5,7 +5,7 @@ export const useAddList = () => {
   const [list, setList] = useState([]); 
 
   const addList = useCallback(() => {  
-    if(list.some(item => item === text)) {
+    if(list.includes(text)) {
       alert('This text is already in the list!');
       return;
     } setList((list)=>[...list, text]);

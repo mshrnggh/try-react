@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "src/components/Headline/Headline.module.css";
 
 export function Headline(props) {
-  console.log('Headline props:', props);
   return (
     <div className={styles.container}>
       <div className={styles.description}>

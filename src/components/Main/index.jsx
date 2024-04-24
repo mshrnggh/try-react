@@ -28,7 +28,6 @@ const ITEMS = [
 ];
 
 export function Main(props) {
-  console.log('Main props:', props);
     useEffect(() => {
       document.body.style.backgroundColor = 'lightgreen ';
       return () => { document.body.style.backgroundColor = '';}
