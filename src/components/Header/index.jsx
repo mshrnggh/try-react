@@ -10,7 +10,6 @@ import styles from 'src/components/Header/Header.module.css';
 //   );
 // }
 
-
 export function Header() {
   const NAV_ITEMS = [
     {href: "/page", label:"Page"},
