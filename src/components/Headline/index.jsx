@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "src/components/Headline/Headline.module.css";
-import React, { useState, useCallback } from "react";
 
 export function Headline(props) {
   console.log('Headline props:', props);

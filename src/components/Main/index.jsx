@@ -43,13 +43,13 @@ export function Main(props) {
       setItems((items) =>  {if (items.length > 1) {
         return items.slice(0, items.length -1);
       } else { return items; }
-    });}, []);
+    });}, [items]);
 
     const addItems = useCallback(() => {
       setItems((items) => {if (items.length < 4) { 
         return [...items, ITEMS[items.length]];
         } else { return items; }
-    }); }, []);
+    }); }, [items]);
 
      return (
        <main className={styles.main}>
