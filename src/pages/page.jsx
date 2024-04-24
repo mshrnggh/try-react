@@ -2,8 +2,10 @@ import styles_Main from "src/components/Main/Main.module.css";
 import { Main } from "src/components/Main";
 import styles from "src/components/Main/Main.module.css";
 import { useState, useCallback } from "react";
+import { useChangeBgcolor } from "src/components/ChangeBgcolor";
 
 export default function Page({addlist, displayList}) {
+  useChangeBgcolor();
   const [arry, setArry] = useState([]);
   const handleAddList = useCallback(() => {
     setArry([...arry, arry.length + 1]);
